@@ -46,3 +46,15 @@ Risk Level = Likelihood × Impact severity.
 High risks require immediate mitigation.
 Medium risks require monitored mitigation.
 Low risks are accepted with periodic review.
+## 7. ISO 27001 Control Mapping
+
+The following controls were selected to mitigate identified risks:
+
+| Risk | ISO 27001 Control Area | Control Description |
+|------|------------------------|--------------------|
+| SQL Injection | A.14 Secure Development | Secure coding & input validation |
+| Phishing | A.7 Awareness & Training | Security awareness training |
+| Malware | A.12 Malware Protection | Anti-malware controls |
+| Cloud Misconfiguration | A.12 Change Management | Configuration management |
+| Privilege Abuse | A.9 Access Control | Least privilege & access review |
+
