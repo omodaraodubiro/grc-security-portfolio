@@ -67,3 +67,14 @@ The following controls were selected to mitigate identified risks:
 | Malware | Mitigate | Endpoint protection & patch management |
 | Cloud Misconfiguration | Mitigate | Periodic configuration audits |
 | Privilege Abuse | Mitigate | Quarterly access reviews |
+
+## 9. Continuous Monitoring Concept
+
+To reduce manual compliance effort and enable continuous validation:
+
+- SIEM alerts will monitor suspicious login attempts.
+- Logs will track privilege escalations.
+- Configuration monitoring tools will detect cloud misconfigurations.
+- Automated access review reports will validate least privilege enforcement.
+
+This approach transitions compliance from periodic review to continuous assurance.
