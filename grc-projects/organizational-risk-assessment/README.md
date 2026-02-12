@@ -23,3 +23,14 @@ This assessment focuses on:
 | Employee Laptops | Used for daily operations | Data leakage risk |
 | Email System | Internal and external communication | Phishing compromise |
 | Admin Accounts | Privileged system access | Full system compromise |
+
+## 5. Risk Identification
+
+| Asset | Threat | Impact | Likelihood | Risk Level |
+|--------|--------|--------|------------|------------|
+| Customer Database | SQL Injection | Data breach | High | High |
+| Email System | Phishing attack | Credential compromise | High | High |
+| Employee Laptops | Malware infection | Data exfiltration | Medium | Medium |
+| Cloud Infrastructure | Misconfiguration | Service disruption | Medium | Medium |
+| Admin Accounts | Privilege abuse | System takeover | Low | High |
+
