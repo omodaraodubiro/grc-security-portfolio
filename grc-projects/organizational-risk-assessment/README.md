@@ -34,3 +34,15 @@ This assessment focuses on:
 | Cloud Infrastructure | Misconfiguration | Service disruption | Medium | Medium |
 | Admin Accounts | Privilege abuse | System takeover | Low | High |
 
+## 6. Risk Evaluation Methodology
+
+Risk levels were determined using a qualitative assessment approach:
+
+- Likelihood: Low / Medium / High
+- Impact: Operational, Financial, Reputational, Regulatory
+
+Risk Level = Likelihood × Impact severity.
+
+High risks require immediate mitigation.
+Medium risks require monitored mitigation.
+Low risks are accepted with periodic review.
