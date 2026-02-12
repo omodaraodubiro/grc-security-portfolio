@@ -58,3 +58,12 @@ The following controls were selected to mitigate identified risks:
 | Cloud Misconfiguration | A.12 Change Management | Configuration management |
 | Privilege Abuse | A.9 Access Control | Least privilege & access review |
 
+## 8. Risk Treatment Plan
+
+| Risk | Treatment Strategy | Action |
+|------|-------------------|--------|
+| SQL Injection | Mitigate | Implement WAF & secure coding review |
+| Phishing | Mitigate | Enforce MFA & awareness training |
+| Malware | Mitigate | Endpoint protection & patch management |
+| Cloud Misconfiguration | Mitigate | Periodic configuration audits |
+| Privilege Abuse | Mitigate | Quarterly access reviews |
