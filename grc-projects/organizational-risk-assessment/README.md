@@ -78,3 +78,15 @@ To reduce manual compliance effort and enable continuous validation:
 - Automated access review reports will validate least privilege enforcement.
 
 This approach transitions compliance from periodic review to continuous assurance.
+
+## 10. Governance Alignment
+
+This risk assessment supports the organization’s broader Information Security Governance framework by:
+
+- Aligning identified risks with ISO 27001 control domains.
+- Establishing accountability for risk treatment actions.
+- Supporting audit-readiness through documented evaluation methodology.
+- Enabling measurable compliance through continuous monitoring.
+
+This ensures that risk management is integrated into the company’s governance structure rather than treated as a one-time exercise.
+
