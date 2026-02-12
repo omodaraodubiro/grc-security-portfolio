@@ -1,10 +1,13 @@
 # NexaCore – ISO 27002:2022 Policy Compliance Framework
 
 ## Executive Summary
-
-This project involved contributing to the design and implementation of a comprehensive Policy Compliance Framework aligned with ISO 27002:2022. The objective was to address compliance gaps, formalize policy governance, and enhance security oversight in preparation for certification readiness and regulatory scrutiny.
+This project involved collaborating in the design and implementation of a comprehensive Policy Compliance Framework aligned with ISO 27002:2022. The objective was to address compliance gaps, formalize policy governance, and enhance security oversight in preparation for certification readiness and regulatory scrutiny.
 
 The sprint resulted in the structured development of 10 core security policies covering high-risk domains identified through risk assessment.
+
+## Team Collaboration
+
+This framework was developed as part of a structured GRC sprint. Responsibilities were distributed across the team, with collaborative input on policy drafting, control mapping, governance structuring, and compliance monitoring design.
 
 
 ## Governance & Ownership Model
