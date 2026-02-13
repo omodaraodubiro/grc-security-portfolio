@@ -126,4 +126,17 @@ Risk Levels:
 - Risk owners are accountable for treatment implementation.
 - Quarterly reviews ensure control effectiveness.
 - Evidence of mitigation is documented for audit readiness.
+## Risk Scoring Methodology
+
+Risk Score = Likelihood (1–3) × Impact (1–3)
+
+Likelihood Scale:
+1 = Low
+2 = Medium
+3 = High
+
+Impact Scale:
+1 = Minor
+2 = Moderate
+3 = Severe
 
