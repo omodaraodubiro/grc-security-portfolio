@@ -120,3 +120,10 @@ Risk Levels:
 4–6 = Medium
 7–9 = High
 
+## Risk Governance Process
+
+- High risks are reported to senior management.
+- Risk owners are accountable for treatment implementation.
+- Quarterly reviews ensure control effectiveness.
+- Evidence of mitigation is documented for audit readiness.
+
