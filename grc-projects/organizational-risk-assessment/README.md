@@ -100,3 +100,23 @@ A structured risk register was developed to support ongoing governance and audit
 | R-003 | Employee Laptops | Malware infection | 2 | 2 | 4 | IT Operations | Mitigate | Open | Quarterly |
 | R-004 | Cloud Infrastructure | Misconfiguration | 2 | 3 | 6 | Cloud Admin | Mitigate | Open | Quarterly |
 | R-005 | Admin Accounts | Privilege abuse | 1 | 3 | 3 | Security Lead | Mitigate | Monitoring | Quarterly |
+
+## Risk Scoring Methodology
+
+Likelihood Scale:
+1 = Low
+2 = Medium
+3 = High
+
+Impact Scale:
+1 = Minor operational impact
+2 = Moderate financial/reputational impact
+3 = Severe regulatory or business disruption impact
+
+Risk Score = Likelihood × Impact
+
+Risk Levels:
+1–3 = Low
+4–6 = Medium
+7–9 = High
+
