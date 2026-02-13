@@ -90,3 +90,13 @@ This risk assessment supports the organization’s broader Information Security 
 
 This ensures that risk management is integrated into the company’s governance structure rather than treated as a one-time exercise.
 
+## 11. Formal Risk Register Structure
+
+A structured risk register was developed to support ongoing governance and audit readiness.
+| Risk ID | Asset | Risk Description | Likelihood (1-3) | Impact (1-3) | Risk Score | Risk Owner | Treatment | Status | Review Date |
+|---------|--------|-----------------|------------------|--------------|------------|------------|-----------|--------|-------------|
+| R-001 | Customer Database | SQL Injection leading to data breach | 3 | 3 | 9 | Head of Engineering | Mitigate | Open | Quarterly |
+| R-002 | Email System | Phishing credential compromise | 3 | 3 | 9 | IT Manager | Mitigate | In Progress | Quarterly |
+| R-003 | Employee Laptops | Malware infection | 2 | 2 | 4 | IT Operations | Mitigate | Open | Quarterly |
+| R-004 | Cloud Infrastructure | Misconfiguration | 2 | 3 | 6 | Cloud Admin | Mitigate | Open | Quarterly |
+| R-005 | Admin Accounts | Privilege abuse | 1 | 3 | 3 | Security Lead | Mitigate | Monitoring | Quarterly |
