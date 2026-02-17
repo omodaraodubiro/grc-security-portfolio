@@ -1,135 +1,168 @@
 # SIEM-Based File Integrity Monitoring (FIM) Control Evaluation
 
-*(Wazuh Implementation & Governance Assessment)*
+*(Governance & Technical Effectiveness Review – Wazuh)*
 
 ## 1. Executive Overview
 
-This project evaluates the effectiveness of a File Integrity Monitoring (FIM) detective control using Wazuh SIEM in a simulated financial environment.
+This project evaluates the effectiveness of a File Integrity Monitoring (FIM) detective control implemented using Wazuh SIEM in a simulated financial services environment.
 
 The objective was to:
 
-* Assess risk related to unauthorized modification of financial documents
-* Validate the effectiveness of monitoring controls
-* Evaluate governance reporting capability
+* Assess risk associated with unauthorized modification of sensitive financial files
+* Validate monitoring capability and alert generation
+* Evaluate governance reporting readiness
 * Demonstrate audit evidence generation
-* Align technical detection with compliance expectations
+* Map technical control performance to compliance expectations
 
-This project bridges technical monitoring with governance oversight.
+This assessment bridges SOC-level monitoring with GRC oversight.
 
-## 2. Risk Context
+
+## 2. Risk Context & Business Impact
 
 ### Identified Risk
 
-Unauthorized modification of sensitive financial documents.
+Unauthorized modification, deletion, or creation of sensitive financial documents.
 
-### Potential Business Impacts
+### Business Impact Analysis
 
 **Financial Impact**
 
-* Loss of financial reporting integrity
-* Budget discrepancies
-* Direct financial loss
+* Inaccurate financial reporting
+* Budget misalignment
+* Direct financial exposure
 
 **Operational Impact**
 
-* Decision-making disruption
-* Audit inconsistencies
+* Disruption of executive decision-making
+* Audit discrepancies
 * Compliance violations
 
 **Reputational Impact**
 
-* Stakeholder trust erosion
-* Regulatory scrutiny
+* Loss of stakeholder trust
+* Increased regulatory scrutiny
+
+This risk was categorized as **High Impact** due to regulatory and financial sensitivity.
+
 
 ## 3. Control Architecture
 
 ### Primary Control
 
-Detective Control: File Integrity Monitoring (FIM) via Wazuh SIEM
+Detective Control – File Integrity Monitoring (FIM)
 
-The control monitors:
+The Wazuh SIEM solution monitors:
 
 * File creation
 * File modification
 * File deletion
+* Timestamp of activity
+* User/account involved
+* System agent reporting status
 
-Each event is logged with:
 
-* Timestamp
-* File path
-* User activity
-* System agent status
+### 📸 Screenshot 1 – FIM Dashboard Overview
 
-This allows measurable monitoring of sensitive file activity.
+![FIM Dashboard Overview](screenshots/fim-dashboard-overview.png)
 
-## 4. Control Effectiveness Evaluation
+ The dashboard provides centralized visibility into file change activity across monitored endpoints. Alert metrics enable risk quantification and trend analysis.
 
-Control performance was evaluated using:
 
-* Total file change alerts
-* Alert frequency & timing analysis
-* Agent health and reporting continuity
-* Centralized event visibility
 
-The SIEM dashboard enabled trend analysis and identification of abnormal access patterns, supporting risk quantification.
+## 4. Risk Scenario Simulation
 
-## 5. Preventive, Detective & Corrective Alignment
+To test control effectiveness, a simulated unauthorized file modification was performed outside standard business hours.
 
-### Preventive Controls
+The objective was to validate:
 
-* Access Control Lists (ACLs)
-* Role-Based Access Restrictions
-* Active Directory Group Policies
+* Real-time alert detection
+* Log accuracy
+* Timestamp reliability
+* Evidence retention
 
-These reduce likelihood of unauthorized modification.
 
-### Detective Controls
+### 📸 Screenshot 2 – File Modification Alert
 
-* Wazuh FIM alert generation
-* Real-time event monitoring
+![File Modification Alert](screenshots/fim-file-modification-alert.png)
 
-### Corrective Controls
+The FIM alert captured modification activity, including timestamp and affected file path. This confirms the control’s ability to detect unauthorized changes in monitored directories.
 
-Triggered when unauthorized activity is detected:
 
-* Restore files from backup
-* Revoke user access
-* Initiate incident investigation
-* Document control exception
 
-This demonstrates full control lifecycle integration.
+## 5. Alert Analysis & Evidence Validation
 
-## 6. Governance & Audit Readiness
+Event details were reviewed to assess:
 
-The centralized SIEM logs provide:
+* Frequency of modification attempts
+* User activity patterns
+* Time-of-day anomalies
+* Consistency of agent reporting
 
-* Tamper-evident monitoring records
-* Change history tracking
-* Checksum validation evidence
+
+### 📸 Screenshot 3 – Filtered Log View by Date Range
+
+![Filtered Log View](screenshots/fim-log-filter-quarter.png)
+
+Filtering by date range and file path allows validation of file integrity over a defined audit period. Absence of modification alerts during a quarter demonstrates effective control operation.
+
+
+## 6. Control Lifecycle Alignment
+
+This evaluation considered the full control lifecycle:
+
+| Control Type | Example                                                    | Purpose                                        |
+| ------------ | ---------------------------------------------------------- | ---------------------------------------------- |
+| Preventive   | Role-Based Access Control (RBAC), ACLs                     | Reduce likelihood of unauthorized modification |
+| Detective    | Wazuh File Integrity Monitoring                            | Detect and log file changes                    |
+| Corrective   | Restore from backup, revoke access, incident investigation | Mitigate and remediate impact                  |
+
+This layered approach strengthens overall governance posture.
+
+
+## 7. Governance & Compliance Mapping
+
+The centralized SIEM logs support:
+
+* Tamper-evident activity records
+* Change control audit trails
+* Checksum validation
 * Time-bound reporting capability
 
-This supports compliance evidence for regulatory frameworks such as:
+This aligns with regulatory expectations under:
 
-* SOX (Change Control)
-* PCI DSS (File integrity monitoring requirements)
-* HIPAA (Data integrity safeguards)
+* SOX – Change Management Controls
+* PCI DSS – File Integrity Monitoring requirements
+* HIPAA – Data Integrity Safeguards
 
-Example audit scenario:
+## 8. Audit Demonstration Scenario
 
-To demonstrate that a sensitive file was not modified during a given quarter, SIEM logs were filtered by file path and time range. Absence of modification alerts, combined with checksum verification, provided audit-ready proof of integrity.
+To demonstrate that a specific financial file remained unmodified during a reporting period:
 
-## 7. Key Takeaways
+1. Logs were filtered by file path and time range
+2. No modification alerts were detected
+3. Latest checksum was reviewed for validation
 
-* Technical monitoring must be tied to governance reporting
-* Detective controls require preventive & corrective support
-* Centralized log management strengthens compliance posture
-* SIEM metrics enable risk quantification and trend analysis
-* Audit readiness depends on structured evidence retention
+This provided audit-ready evidence of file integrity.
+
+## 9. Key Findings
+
+* FIM control successfully detected file modification events
+* Centralized logging improves governance visibility
+* SIEM filtering enables structured audit reporting
+* Preventive controls must complement detective controls
+* Agent uptime is critical for continuous monitoring
 
 
-# What This Project Demonstrates
+## 10. Conclusion
 
-* Understanding of control lifecycle (preventive, detective, corrective)
-* Ability to translate technical alerts into risk language
-* Governance-focused evaluation of monitoring effectiveness
-* Practical SOC exposure aligned to compliance frameworks
+This project demonstrates the ability to:
+
+* Evaluate technical controls through a governance lens
+* Translate SIEM alerts into risk language
+* Align monitoring capability with compliance frameworks
+* Assess detective control effectiveness
+* Produce audit-ready evidence
+
+This strengthens integration between SOC monitoring and GRC oversight functions.
+
+Answer honestly.
