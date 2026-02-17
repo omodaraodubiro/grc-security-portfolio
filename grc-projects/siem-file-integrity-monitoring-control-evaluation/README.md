@@ -164,5 +164,3 @@ This project demonstrates the ability to:
 * Produce audit-ready evidence
 
 This strengthens integration between SOC monitoring and GRC oversight functions.
-
-Answer honestly.
