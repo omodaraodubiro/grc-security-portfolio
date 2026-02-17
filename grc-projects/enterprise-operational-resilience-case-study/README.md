@@ -57,8 +57,6 @@ Decision authority hierarchy:
 
 Clear escalation and reporting cadence (hourly executive updates) was established during recovery.
 
----
-
 ## 3. Disaster Recovery Activation & Crisis Governance
 
 ### Activation Criteria
