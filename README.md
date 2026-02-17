@@ -1,35 +1,43 @@
-# GRC & Security Analyst Portfolio
+# Governance, Risk & Compliance (GRC) Security Portfolio
 
-## About Me
-I am an entry-level cybersecurity professional focused on Governance, Risk, and Compliance (GRC) and Security Operations. I have hands-on experience in risk assessments, ISO 27001 control mapping, SIEM monitoring, and security policy development.
+**Omodara Odubiro**
 
-I am building practical, real-world security projects to demonstrate my ability to identify risk, map controls, and support structured compliance programs.
+This portfolio showcases structured Governance, Risk, and Compliance (GRC) projects focused on operational resilience, enterprise risk management, disaster recovery governance, and regulatory alignment within financial services environments.
 
-## Core Skills
-- Risk Assessment & Risk Registers
-- ISO 27001 & Control Mapping
-- Security Policy Development
-- SIEM Monitoring (Wazuh)
-- Log Analysis & Alert Triage
-- Incident Documentation
-- Compliance & Audit Support Fundamentals
+The objective of this portfolio is to demonstrate practical, scenario-based application of:
 
-## Tools & Technologies
-- Wazuh SIEM
-- Burp Suite
-- Linux
-- Microsoft 365 Security
-- GitHub
-- Excel / Google Sheets
+* Enterprise risk assessment methodologies
+* ISO 27001 control alignment
+* Disaster recovery governance
+* Regulatory coordination
+* Risk-based decision analysis
+* Operational resilience strategy
 
+## Flagship Project
 
-## Portfolio Structure
+### Enterprise Operational Resilience & Risk Governance Case Study
 
-### GRC Projects
-Risk assessments, control mapping, compliance documentation, and governance frameworks.
+A comprehensive end-to-end simulation covering:
 
-### SOC Projects
-SIEM monitoring, alert analysis, and incident response simulations.
+* Enterprise risk identification and scoring
+* Disaster recovery activation
+* Executive & regulatory communication
+* Vendor risk escalation
+* Crisis risk tradeoffs
+* Controlled infrastructure transition
+* Post-incident resilience improvements
 
-### Policies
-Security policies aligned to ISO 27001 and enterprise security standards.
+## Additional Projects
+
+* Organizational Risk Assessment & Governance Oversight
+* Policy Compliance & ISO 27002 Control Mapping Sprint
+* Control Mapping & Gap Analysis (In Progress)
+
+## Core Focus Areas
+
+* Risk Assessment & Treatment
+* Compliance Monitoring
+* Control Effectiveness Evaluation
+* Business Continuity & Disaster Recovery Governance
+* Regulatory Awareness (Financial Sector)
+* SIEM & Log Monitoring Foundations
