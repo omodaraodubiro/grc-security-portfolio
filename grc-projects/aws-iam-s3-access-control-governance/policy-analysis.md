@@ -23,3 +23,4 @@ s3:GetObject
 This demonstrates enforcement of least privilege at the object layer.
 [Devuser Access Denied](screenshots/devuser-access-denied.png)
 
+
