@@ -1,13 +1,13 @@
-## AWS IAM & S3 Governance Risk Assessment
-## 1. Identified Control Weaknesses
-## Risk 1: Overreliance on Resource-Based Policies
+# AWS IAM & S3 Governance Risk Assessment
+### 1. Identified Control Weaknesses
+**Risk 1: Overreliance on Resource-Based Policies**
 
-Observation:
+**Observation:**
 Access to bucket2 was granted through a bucket policy even though the IAM role policy did not explicitly grant s3:PutObject.
-Risk:
+**Risk:**
 If bucket policies are loosely managed, they can unintentionally expand access beyond intended role permissions.
 
-Impact:
+**Impact:**
 
 Unauthorized data upload
 
@@ -16,7 +16,8 @@ Data exfiltration
 Accidental exposure
 
 Compliance violations (GLBA, SOC 2, ISO 27001 Annex A.9)
-Mitigation:
+
+**Mitigation:**
 
 Centralized review of bucket policies
 
