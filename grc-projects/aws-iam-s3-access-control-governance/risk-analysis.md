@@ -26,3 +26,29 @@ Enforce explicit deny statements where necessary
 Implement Service Control Policies (SCPs) at the org level
 
 Use AWS Access Analyzer for policy validation
+
+**Risk 2: Privilege Escalation via Role Assumption**
+
+**Observation:**
+Assuming BucketsAccessRole significantly altered permissions.
+
+**Risk:**
+If trust policies are overly broad, malicious users could assume privileged roles.
+
+**Impact:**
+
+Horizontal privilege escalation
+
+Access to sensitive data
+
+Regulatory breach
+
+**Mitigation:**
+
+Restrict trust relationships to specific principals
+
+Use MFA for role assumption
+
+Enable CloudTrail monitoring for AssumeRole events
+
+Implement conditional access controls
