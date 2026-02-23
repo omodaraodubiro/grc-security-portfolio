@@ -45,3 +45,32 @@ Segregation of duties between IAM user and IAM role
 
 Policy evaluation changes based on assumed role context
 ![Role Assumed Access](screenshots/role-assumed-success.png)
+
+## 3. Identity-Based vs Resource-Based Policy Interaction
+
+Although the IAM role policy (GrantBucket1Access) did not explicitly grant s3:PutObject access to bucket2, the upload to bucket2 succeeded.
+
+Upon inspection, bucket2 contained a resource-based policy granting:
+
+s3:GetObject
+
+s3:PutObject
+
+s3:ListBucket
+
+to the BucketsAccessRole principal.
+
+## Governance Insight
+
+AWS evaluates access by combining:
+
+Identity-based policies
+
+Resource-based policies
+
+Explicit denies (if any)
+
+Because there was no explicit deny and bucket2’s resource policy allowed the action, access was granted.
+
+This highlights how resource-based policies can expand effective permissions beyond identity-based policy expectations.
+![Bucket2 Policy](screenshots/bucket2-resource-policy.png)
