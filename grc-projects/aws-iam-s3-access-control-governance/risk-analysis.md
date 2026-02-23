@@ -52,3 +52,42 @@ Use MFA for role assumption
 Enable CloudTrail monitoring for AssumeRole events
 
 Implement conditional access controls
+
+**Risk 3: Lack of Explicit Deny Controls**
+
+**Observation:**
+No explicit deny policies were present to prevent unintended access expansion.
+
+**Risk:**
+Implicit allow through resource-based policies may override governance intent.
+
+**Impact:**
+
+Policy misalignment
+
+Control circumvention
+
+**Mitigation:**
+
+Implement explicit deny conditions for sensitive buckets
+
+Periodic policy review audits
+
+Continuous monitoring using AWS Config
+
+### 2. Control Evaluation Summary
+| Control Area              | Status             | Observation                              |
+| ------------------------- | ------------------ | ---------------------------------------- |
+| Least Privilege           | Partially Enforced | Identity policy limited object actions   |
+| Role Trust Governance     | Controlled         | Trust policy restricted to specific user |
+| Resource Policy Oversight | Weak               | Bucket2 policy expanded access           |
+| Monitoring & Logging      | Assumed Enabled    | CloudTrail records API attempts          |
+
+### 3. Governance Lessons Learned
+Effective access = identity policy + resource policy + trust policy
+
+Resource-based policies require strict governance oversight
+
+Role assumption significantly alters risk posture
+
+Cloud environments require layered control validation
