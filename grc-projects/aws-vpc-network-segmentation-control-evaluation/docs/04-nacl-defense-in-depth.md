@@ -1,4 +1,4 @@
-# Network ACL Evaluation – Defense in Depth
+# Network ACL Evaluation: Defense in Depth
 ## 1. Deny Rule Implementation
 
 Added NACL Rule 99:
