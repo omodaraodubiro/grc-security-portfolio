@@ -20,7 +20,50 @@ Although the AppServer resides in a private subnet, overly permissive rules cont
 
 Replaced 0.0.0.0/0 with:
 
-ProxyServer1PrivateIP/32
+ProxyServer1PublicIP/32
 ![Private Subnet NAT Routing](../screenshots/http-restricted-ip.png)
 
 ![Private Subnet NAT Routing](../screenshots/http-restricted-ip1.png)
+Result:
+
+ProxyServer1 → Access Granted
+
+ProxyServer2 → Access Denied
+### Governance Evaluation
+
+Benefits:
+
+- Reduced lateral movement risk
+
+- Precise access control
+
+Limitation:
+
+- Not scalable
+
+- Operationally rigid
+
+- Vulnerable to IP changes
+## 3. Security Group Referencing (Scalable Control)
+
+Replaced IP rule with:
+
+Allow HTTP from ProxySG
+
+Assigned ProxySG to both proxy servers
+![Private Subnet NAT Routing](../screenshots/security-group-reference-rule.png)
+![Private Subnet NAT Routing](../screenshots/security-group-reference-rule1.png)
+
+### Governance Strength
+
+Security group referencing:
+
+- Enables role-based segmentation
+
+- Supports auto-scaling environments
+
+- Eliminates static IP dependency
+
+- Aligns with Zero Trust architecture
+
+This represents mature cloud network design.
