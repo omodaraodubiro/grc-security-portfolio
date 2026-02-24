@@ -11,6 +11,6 @@ Used SSH agent forwarding to access AppServer.
 
 ![Private Subnet NAT Routing](../screenshots/bastion-ssh-success.png)
 
-![Private Subnet NAT Routing](../screenshots/bastion-ssh-success (2).png)
+![Private Subnet NAT Routing](../screenshots/bastion-ssh-success2.png)
 
 ### Risk Assessment
